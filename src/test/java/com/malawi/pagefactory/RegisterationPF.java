@@ -1,5 +1,7 @@
 package com.malawi.pagefactory;
 
+import java.util.List;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -33,5 +35,20 @@ public class RegisterationPF extends MBaseClass{
 	
 	@FindBy(xpath = "//button[text()=' Send OTP ']")
 	public WebElement button;
+	
+	@FindBy(xpath = "//input[@maxlength=\"1\"]")
+	public List<WebElement> otpbox;
+	
+	public   void enterotp(String otp) {
+		for(int i=0; i< otp.length();i++) {
+			otpbox.get(i).sendKeys(String.valueOf(otp.charAt(i)));
+		}
+	}
+	
+	@FindBy (xpath = "//button[text()=' Verify ']")
+	public WebElement verifybutton;
+	
+	@FindBy(xpath = "//button[text()='NEXT']")
+	public WebElement successmsg;
 
 }

@@ -1,5 +1,7 @@
 package com.malawi.stepdefinition;
 
+import org.junit.Assert;
+
 import com.malawi.baseclass.MBaseClass;
 import com.malawi.baseclass.UtilityClass;
 import com.malawi.pagefactory.RegisterationPF;
@@ -46,6 +48,7 @@ public class RegisterationStepDef {
 	public void verify_the_national_id_field(String ID) {
 		reg = new RegisterationPF();
 		reg.id.sendKeys(ID);
+		
 	}
 	
 	@When("veriify the email address field {string}")
@@ -69,10 +72,18 @@ public class RegisterationStepDef {
 	@When("verify the otp field")
 	public void verify_the_otp_field() {
 		reg = new RegisterationPF();
+	String otp=	MBaseClass.scanner();
+	reg.enterotp(otp);
+	
+	
 	}
+	
 	@Then("verify the submit button")
 	public void verify_the_submit_button() {
-	     
+	     UtilityClass.clickElement(20, reg.verifybutton);
+	    UtilityClass.clickElement(20,reg.successmsg);
+	     Assert.assertTrue("Account Created Successfully!", reg.successmsg.isDisplayed());
+	   
 	}
 
 

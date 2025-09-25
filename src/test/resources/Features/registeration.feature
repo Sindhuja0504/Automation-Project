@@ -15,3 +15,4 @@ Feature: Create Account for pre-registeration
     Examples: 
       | Name     | Surname | Number | ID       | Email                 | Password    |
       | sindhuja | sindhu  | 347897654 | 1234BBBB | mspteam0707@gmail.com | Testing@123 |
+      |mahendran|mahe|111111111|0000000|mspteam0707@gmail.com | Testing@123 |
