@@ -10,7 +10,7 @@ public class Basic {
 	
 	public static void main(String[] args) {
 		
-		java.sql. Connection connect=null;
+		java.sql. Connection connect=null;  // java.sql DriverManager return type 
 		
 		try {
 			Class.forName("org.postgresql.Driver");
