@@ -14,6 +14,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class MBaseClass {
 
 	public static WebDriver driver;
@@ -23,7 +25,7 @@ public class MBaseClass {
 
 	public static void browserLaunch() {
 		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver-win64\\chromedriver.exe");
-
+		//WebDriverManager.chromedriver().setup();
 		ChromeOptions options = new ChromeOptions();
 		options.setAcceptInsecureCerts(true);
 		options.addArguments("--ignore-certificate-errors");

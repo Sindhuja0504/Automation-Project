@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="11.705" tests="8" skipped="0" failures="8" errors="0">
+<testcase classname="Login and form page" name="Validate successful login with valid inputs" time="1.376">
+<failure type="org.openqa.selenium.SessionNotCreatedException" message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 139
+Current browser version is 141.0.7390.55 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'DESKTOP-J34SQF6', ip: '192.168.11.197'
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--ignore-certificate-errors, --disable-build-check], extensions: []}}]}]">
+<![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 139
+Current browser version is 141.0.7390.55 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'DESKTOP-J34SQF6', ip: '192.168.11.197'
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--ignore-certificate-errors, --disable-build-check], extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:173)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:110)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+	at com.malawi.baseclass.MBaseClass.browserLaunch(MBaseClass.java:32)
+	at com.malawi.stepdefinition.LoginStepDefinition.launch_the_browser_and_url(LoginStepDefinition.java:14)
+	at ✽.Launch the browser and url(file:///C:/Users/M1001/projectclss-workspace/FinalProject/src/test/resources/Features/01_login.feature:5)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Launch the browser and url............................................failed
+When Provide valid inputs and  then hit submit..............................skipped
+Then Validate if the user logged in successfully............................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Login and form page" name="Validating a forms with valid inputs" time="2.021">
+<failure type="java.lang.NullPointerException" message="Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null">
+<![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at com.malawi.stepdefinition.LoginStepDefinition.provide_a_service_details(LoginStepDefinition.java:43)
+	at ✽.Provide a  service details(file:///C:/Users/M1001/projectclss-workspace/FinalProject/src/test/resources/Features/01_login.feature:14)
+]]>
+</failure>
+<system-out><![CDATA[
+Given Launch the passport application portal................................passed
+When Provide a  service details.............................................failed
+And Provide a  personal details.............................................skipped
+And Provide a  permanent address details....................................skipped
+And Select the same as present address option or enter present details......skipped
+And Accept the terms and conditions and Click next..........................skipped
+Then Verify the user is navigated to the next page..........................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Validate  Document Upload Page" name="Uploading valid documents with correct format and size" time="3.01">
+<failure type="java.lang.NullPointerException" message="Cannot invoke &quot;org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)&quot; because &quot;this.searchContext&quot; is null">
+<![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy21.click(Unknown Source)
+	at com.malawi.stepdefinition.DocumentStepDef.upload_national_id_document(DocumentStepDef.java:25)
+	at ✽.upload national id document(file:///C:/Users/M1001/projectclss-workspace/FinalProject/src/test/resources/Features/02_document.feature:5)
+]]>
+</failure>
+<system-out><![CDATA[
+Given In document upload page...............................................passed
+When upload national id document............................................failed
+And upload passport size photo document.....................................skipped
+And upload other require documents..........................................skipped
+Then Documents should be accepted and the application should navugate to the next page.skipped
+]]></system-out>
+</testcase>
+<testcase classname="Validate a preview page" name="validate a preview page with positive case" time="0.007">
+<failure type="java.lang.NullPointerException" message="Cannot invoke &quot;org.openqa.selenium.JavascriptExecutor.executeScript(String, Object[])&quot; because &quot;js&quot; is null">
+<![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.JavascriptExecutor.executeScript(String, Object[])" because "js" is null
+	at com.malawi.baseclass.UtilityClass.scrollBottom(UtilityClass.java:190)
+	at com.malawi.stepdefinition.PreviewStepDefinition.validate_modify_icon(PreviewStepDefinition.java:21)
+	at ✽.validate   modify icon(file:///C:/Users/M1001/projectclss-workspace/FinalProject/src/test/resources/Features/03_preview.feature:5)
+]]>
+</failure>
+<system-out><![CDATA[
+Given launch browser and url................................................passed
+When validate   modify icon.................................................failed
+And validate  check box.....................................................skipped
+Then validate  continue button..............................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Validate slot booking page" name="Book a slot on an avaliable date" time="3.021">
+<failure type="java.lang.NullPointerException" message="Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;com.malawi.baseclass.MBaseClass.driver&quot; is null">
+<![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "com.malawi.baseclass.MBaseClass.driver" is null
+	at com.malawi.baseclass.MBaseClass.findelement(MBaseClass.java:52)
+	at com.malawi.pagefactory.SlotPF.alldates(SlotPF.java:16)
+	at com.malawi.stepdefinition.SlotStepDefinition.validate_can_able_to_select_avaiable_slots(SlotStepDefinition.java:22)
+	at ✽.validate can able to select avaiable slots(file:///C:/Users/M1001/projectclss-workspace/FinalProject/src/test/resources/Features/04_slot.feature:5)
+]]>
+</failure>
+<system-out><![CDATA[
+Given launch a browser and url..............................................passed
+When validate can able to select avaiable slots.............................failed
+And Validate user can able to select time slot..............................skipped
+And Validate user can navigate using next and previous arrow................skipped
+Then Validate a back and book later and continue............................skipped
+And Validate  a continue button should be enabled after selecting a slot....skipped
+]]></system-out>
+</testcase>
+<testcase classname="Validate a Review page" name="validate a review page with positive case" time="0.006">
+<failure type="java.lang.NullPointerException" message="Cannot invoke &quot;org.openqa.selenium.JavascriptExecutor.executeScript(String, Object[])&quot; because &quot;js&quot; is null">
+<![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.JavascriptExecutor.executeScript(String, Object[])" because "js" is null
+	at com.malawi.baseclass.UtilityClass.scrollBottom(UtilityClass.java:190)
+	at com.malawi.stepdefinition.ReviewStepDefinition.verify_user_is_able_to_download_a_pdf(ReviewStepDefinition.java:14)
+	at ✽.Verify user is able to download a pdf(file:///C:/Users/M1001/projectclss-workspace/FinalProject/src/test/resources/Features/05_review.feature:5)
+]]>
+</failure>
+<system-out><![CDATA[
+Given launch browser and url................................................passed
+When Verify user is able to download a pdf..................................failed
+And verify the finish button................................................skipped
+Then Verify that the page navigate to my application page...................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Create Account for pre-registeration" name="Register with valid inputs - #1.1" time="1.143">
+<failure type="org.openqa.selenium.SessionNotCreatedException" message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 139
+Current browser version is 141.0.7390.55 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'DESKTOP-J34SQF6', ip: '192.168.11.197'
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--ignore-certificate-errors, --disable-build-check], extensions: []}}]}]">
+<![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 139
+Current browser version is 141.0.7390.55 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'DESKTOP-J34SQF6', ip: '192.168.11.197'
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--ignore-certificate-errors, --disable-build-check], extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:173)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:110)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+	at com.malawi.baseclass.MBaseClass.browserLaunch(MBaseClass.java:32)
+	at com.malawi.stepdefinition.RegisterationStepDef.launch_browser_and_load_url(RegisterationStepDef.java:17)
+	at ✽.launch browser and load url(file:///C:/Users/M1001/projectclss-workspace/FinalProject/src/test/resources/Features/registeration.feature:4)
+]]>
+</failure>
+<system-out><![CDATA[
+Given launch browser and load url...........................................failed
+When verify the name field "sindhuja".......................................skipped
+And verify the surname field "sindhu".......................................skipped
+And verify the phone number field "347897654"...............................skipped
+And verify the national id field "1234BBBB".................................skipped
+And veriify the email address field "mspteam0707@gmail.com".................skipped
+And verify the password field "Testing@123".................................skipped
+And verify the sendotp button...............................................skipped
+And verify the otp field....................................................skipped
+Then verify the submit button...............................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Create Account for pre-registeration" name="Register with valid inputs - #1.2" time="0.956">
+<failure type="org.openqa.selenium.SessionNotCreatedException" message="Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 139
+Current browser version is 141.0.7390.55 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'DESKTOP-J34SQF6', ip: '192.168.11.197'
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--ignore-certificate-errors, --disable-build-check], extensions: []}}]}]">
+<![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created: This version of ChromeDriver only supports Chrome version 139
+Current browser version is 141.0.7390.55 with binary path C:\Program Files\Google\Chrome\Application\chrome.exe 
+Host info: host: 'DESKTOP-J34SQF6', ip: '192.168.11.197'
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.5'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {acceptInsecureCerts: true, browserName: chrome, goog:chromeOptions: {args: [--ignore-certificate-errors, --disable-build-check], extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:244)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:173)
+	at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:110)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+	at com.malawi.baseclass.MBaseClass.browserLaunch(MBaseClass.java:32)
+	at com.malawi.stepdefinition.RegisterationStepDef.launch_browser_and_load_url(RegisterationStepDef.java:17)
+	at ✽.launch browser and load url(file:///C:/Users/M1001/projectclss-workspace/FinalProject/src/test/resources/Features/registeration.feature:4)
+]]>
+</failure>
+<system-out><![CDATA[
+Given launch browser and load url...........................................failed
+When verify the name field "mahendran"......................................skipped
+And verify the surname field "mahe".........................................skipped
+And verify the phone number field "111111111"...............................skipped
+And verify the national id field "0000000"..................................skipped
+And veriify the email address field "mspteam0707@gmail.com".................skipped
+And verify the password field "Testing@123".................................skipped
+And verify the sendotp button...............................................skipped
+And verify the otp field....................................................skipped
+Then verify the submit button...............................................skipped
+]]></system-out>
+</testcase>
+</testsuite>

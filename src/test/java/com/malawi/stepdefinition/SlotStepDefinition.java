@@ -19,7 +19,7 @@ public class SlotStepDefinition {
 	public void validate_can_able_to_select_avaiable_slots() throws InterruptedException {
 		Thread.sleep(3000);
 		System.out.println("slot page");
-		slot.alldates("22 Sep 2025");
+		slot.alldates("16 Oct 2025");
 		//slot.selectingdate("22 sep 2025");
 //		Assert.assertTrue(true);
 		

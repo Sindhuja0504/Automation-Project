@@ -1,4 +1,4 @@
-package com.malawi.runner;
+package com.app.rerun;
 
 import org.junit.runner.RunWith;
 
